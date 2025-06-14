@@ -6,11 +6,11 @@ public class ContaTerminal {
 
         System.out.println("Por favor, digite o número da Agência");
 
-        String agencia = scanner.next();
+        var agencia = scanner.nextInt();
 
         System.out.println("Por favor, digite o número da sua Conta Bancária");
 
-        var conta = scanner.nextInt();
+        String conta = scanner.next();
 
         scanner.nextLine();
 
@@ -22,6 +22,6 @@ public class ContaTerminal {
 
         var saque = scanner.nextDouble();
 
-        System.out.printf(" Senhor(a) %s obrigado(a) por criar uma conta em nosso banco, sua Agência é a %s, conta %d e o saldo de %.2f já está disponível para saque", nome, agencia, conta, saque);
+        System.out.printf(" Senhor(a) %s obrigado(a) por criar uma conta em nosso banco, sua Agência é a %d, conta %s e o saldo de %.2f já está disponível para saque", nome, agencia, conta, saque);
     }
 }
